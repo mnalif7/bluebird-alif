@@ -6,17 +6,29 @@
    <elementGuidId>e9278b2f-8faa-4c95-9def-35d0f36dc237</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <autoUpdateContent>true</autoUpdateContent>
+   <autoUpdateContent>false</autoUpdateContent>
    <connectionTimeout>-1</connectionTimeout>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
-   <httpBodyContent></httpBodyContent>
-   <httpBodyType></httpBodyType>
+   <httpBodyContent>{
+  &quot;text&quot;: &quot;{\n  user: \&quot;\&quot;,\n  \&quot;driver_notes\&quot;: \&quot;xxxxxx\&quot;,\n  \&quot;pickup_latitude\&quot;: \&quot;xx.xxxx\&quot;,\n  \&quot;pickup_longitude\&quot;: \&quot;xx.xxxx\&quot;,\n  \&quot;special_order\&quot;: \&quot;xxx\&quot;\n}&quot;,
+  &quot;contentType&quot;: &quot;application/json&quot;,
+  &quot;charset&quot;: &quot;UTF-8&quot;
+}</httpBodyContent>
+   <httpBodyType>text</httpBodyType>
+   <httpHeaderProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>Content-Type</name>
+      <type>Main</type>
+      <value>application/json</value>
+      <webElementGuid>0585c078-90a7-432a-9c39-999db3908040</webElementGuid>
+   </httpHeaderProperties>
    <katalonVersion>8.6.5</katalonVersion>
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>POST</restRequestMethod>
-   <restUrl>${GlobalVariable.stagingURL}/api/users?order_id=${order_id}</restUrl>
+   <restUrl>${GlobalVariable.stagingURL}/api/order</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -25,13 +37,6 @@
    <soapServiceFunction></soapServiceFunction>
    <socketTimeout>-1</socketTimeout>
    <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
-   <variables>
-      <defaultValue>'1'</defaultValue>
-      <description></description>
-      <id>085f0a27-16d1-4afc-b099-3c9847cdda65</id>
-      <masked>false</masked>
-      <name>order_id</name>
-   </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
 import com.kms.katalon.core.testobject.RequestObject

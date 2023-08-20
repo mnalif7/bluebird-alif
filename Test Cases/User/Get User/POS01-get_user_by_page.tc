@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>POS01-delete_order_by_order_id</name>
+   <name>POS01-get_user_by_page</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>41565d43-a8c0-4a9b-a158-662b54d24d82</testCaseGuid>
+   <testCaseGuid>fbc86660-9488-4d7e-b2bd-98dfddb7f9a6</testCaseGuid>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>3aff6319-1294-4c89-9790-af96e2b46893</variableId>
+      <variableId>dc721d1e-28a3-4f30-ba6b-cc05913f93d3</variableId>
    </variableLinks>
    <variable>
-      <defaultValue>''</defaultValue>
+      <defaultValue>'1'</defaultValue>
       <description></description>
-      <id>3aff6319-1294-4c89-9790-af96e2b46893</id>
+      <id>dc721d1e-28a3-4f30-ba6b-cc05913f93d3</id>
       <masked>false</masked>
       <name>order_id</name>
    </variable>

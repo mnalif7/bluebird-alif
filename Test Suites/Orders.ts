@@ -11,4 +11,160 @@
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <rerunImmediately>false</rerunImmediately>
    <testSuiteGuid>ba6b67db-bc8c-4c98-b6b1-2725c9ce3e05</testSuiteGuid>
+   <testCaseLink>
+      <guid>fa47a62b-9f7f-4be9-8a9f-db6beb3f8c83</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Order/Delete Order/NEG01-order_not_found</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>7c7f544f-9bd8-41b6-b9fc-ec627155c57b</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>2f12a159-7fa4-42e4-928d-2405a7058be2</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Order/Delete Order/POS01-delete_order_by_order_id</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>3aff6319-1294-4c89-9790-af96e2b46893</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>b5fc4c7e-9a8a-4eaa-9494-a270d6b595b9</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Order/Get Order/NEG01-order_not_found</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>fdc522bb-818d-456a-873c-d21d7ce94598</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>e1a4a8e5-470d-4b7e-a209-4dd05935b30d</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Order/Get Order/POS01-get_order_by_order_id</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>15bdaf7c-17ef-4afc-af0f-c4feaab26c5f</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>d5885969-1571-44f1-9d5c-eae1a894a933</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Order/Post Order/NEG01-invalid_longitude</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>a6d72591-0ff5-4d6e-826e-afa170f1457f</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>9bbbb960-9993-4916-a4f7-d71f12f49ff4</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Order/Post Order/NEG02-invalid_latitude</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>91f33490-49ae-42c1-87bb-00c23c1df19e</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>67aa8f91-c9e9-4b1f-a432-747ed1947d6e</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Order/Post Order/POS01-create_special_order</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>54c5eeb1-a2b3-48fc-bd8c-acf65403c18e</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>bad1e6f3-b983-4726-bfec-57d8390f02b9</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Order/Post Order/POS02-create_regular_order</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>5b2fa052-499d-4d5e-8fed-a9c546e46194</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>5747eb06-111f-413e-96cf-220d6c2b2fb0</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Order/Update Order/NEG01-order_not_found</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>cdf7beb4-c778-4c09-8b0b-6da778cb9d74</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>39f0fcc0-2e29-490c-9da6-4bfa23d48334</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Order/Update Order/POS01-update_order_by_order_id</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>cd3b747f-48a6-42b0-a25d-50ff76e05ac3</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>b852faed-65c5-4a55-bd22-bc877ce1ed91</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/User/Get User/NEG01-order_not_found</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>48a8e78f-e538-43aa-9132-f463e1d81410</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>a5787713-023f-47b3-a16c-8a666148eac9</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/User/Get User/POS01-get_user_by_page</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>dc721d1e-28a3-4f30-ba6b-cc05913f93d3</variableId>
+      </variableLink>
+   </testCaseLink>
 </TestSuiteEntity>

@@ -6,7 +6,12 @@
    <defaultProfile>true</defaultProfile>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'https://reqres.in'</initValue>
+      <initValue>'https://staging-bluebird.dev'</initValue>
       <name>stagingURL</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://reqres.in'</initValue>
+      <name>reqresinURL</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

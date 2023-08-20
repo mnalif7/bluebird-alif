@@ -5,8 +5,14 @@
    <tag></tag>
    <comment></comment>
    <testCaseGuid>fa5f5b8f-1158-4892-99fa-0c87b92525ce</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>15bdaf7c-17ef-4afc-af0f-c4feaab26c5f</variableId>
+   </variableLinks>
    <variable>
-      <defaultValue>''</defaultValue>
+      <defaultValue>'1'</defaultValue>
       <description></description>
       <id>15bdaf7c-17ef-4afc-af0f-c4feaab26c5f</id>
       <masked>false</masked>

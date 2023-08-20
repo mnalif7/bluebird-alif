@@ -1,4 +1,4 @@
-package a
+package fetcher
 import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
@@ -38,46 +38,33 @@ import com.kms.katalon.core.util.KeywordUtil
 import com.kms.katalon.core.webui.exception.WebElementNotFoundException
 
 
-class B {
-	/**
-	 * Refresh browser
-	 */
+class Order {
 	@Keyword
-	def refreshBrowser() {
-		KeywordUtil.logInfo("Refreshing")
-		WebDriver webDriver = DriverFactory.getWebDriver()
-		webDriver.navigate().refresh()
-		KeywordUtil.markPassed("Refresh successfully")
+	def postOrder (String orderId) {
+		response = WS.sendRequest(findTestObject('Order/POST Order', [('order_id') : orderId]))
+		WS.verifyEqual(response.getStatusCode(), 201)
+		return response
 	}
 
-	/**
-	 * Click element
-	 * @param to Katalon test object
-	 */
 	@Keyword
-	def clickElement(TestObject to) {
-		try {
-			WebElement element = WebUiBuiltInKeywords.findWebElement(to);
-			KeywordUtil.logInfo("Clicking element")
-			element.click()
-			KeywordUtil.markPassed("Element has been clicked")
-		} catch (WebElementNotFoundException e) {
-			KeywordUtil.markFailed("Element not found")
-		} catch (Exception e) {
-			KeywordUtil.markFailed("Fail to click on element")
-		}
+	def getOrder (String orderId) {
+		response = WS.sendRequest(findTestObject('Order/GET Order', [('order_id') : orderId]))
+		WS.verifyEqual(response.getStatusCode(), 200)
+		return response
 	}
 
-	/**
-	 * Get all rows of HTML table
-	 * @param table Katalon test object represent for HTML table
-	 * @param outerTagName outer tag name of TR tag, usually is TBODY
-	 * @return All rows inside HTML table
-	 */
+
 	@Keyword
-	def List<WebElement> getHtmlTableRows(TestObject table, String outerTagName) {
-		WebElement mailList = WebUiBuiltInKeywords.findWebElement(table)
-		List<WebElement> selectedRows = mailList.findElements(By.xpath("./" + outerTagName + "/tr"))
-		return selectedRows
+	def patchOrder (String orderId) {
+		response = WS.sendRequest(findTestObject('Order/PATCH Order', [('order_id') : orderId]))
+		WS.verifyEqual(response.getStatusCode(), 200)
+		return response
+	}
+
+	@Keyword
+	def deleteOrder (String orderId) {
+		response = WS.sendRequest(findTestObject('Order/DELETE Order', [('order_id') : orderId]))
+		WS.verifyEqual(response.getStatusCode(), 200)
+		return response
 	}
 }

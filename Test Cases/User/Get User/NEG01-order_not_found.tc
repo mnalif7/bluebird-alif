@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>POS01-delete_order_by_order_id</name>
+   <name>NEG01-order_not_found</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>41565d43-a8c0-4a9b-a158-662b54d24d82</testCaseGuid>
+   <testCaseGuid>cb68761f-11c7-4b30-ade2-077f9281ce3f</testCaseGuid>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>3aff6319-1294-4c89-9790-af96e2b46893</variableId>
+      <variableId>48a8e78f-e538-43aa-9132-f463e1d81410</variableId>
    </variableLinks>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
-      <id>3aff6319-1294-4c89-9790-af96e2b46893</id>
+      <id>48a8e78f-e538-43aa-9132-f463e1d81410</id>
       <masked>false</masked>
       <name>order_id</name>
    </variable>

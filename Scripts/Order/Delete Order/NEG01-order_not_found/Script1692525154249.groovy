@@ -18,12 +18,7 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import groovy.json.JsonOutput as JsonOutput
 
-r = WS.sendRequest(findTestObject('Order/GET Order', [('order_id') : '1']))
+response = WS.sendRequest(findTestObject('Order/GET Order', [('order_id') : '1']))
 
-//println(r.getStatusCode())
-//
-//assert r.getStatusCode() == 209
-WS.verifyEqual(r.getStatusCode(), 209)
-
-WS.sendRequest(findTestObject(null))
+WS.verifyEqual(response.getStatusCode(), 404)
 

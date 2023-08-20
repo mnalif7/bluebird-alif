@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>PATCH Order</name>
+   <name>GET user</name>
    <tag></tag>
-   <elementGuidId>9657a5b3-a1db-499e-8111-b7bded410192</elementGuidId>
+   <elementGuidId>900b28ce-7676-4b1a-a78f-2f5426ffc477</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <autoUpdateContent>true</autoUpdateContent>
@@ -15,8 +15,8 @@
    <katalonVersion>8.6.5</katalonVersion>
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
-   <restRequestMethod>PATCH</restRequestMethod>
-   <restUrl>${GlobalVariable.stagingURL}/api/order/${order_id}</restUrl>
+   <restRequestMethod>GET</restRequestMethod>
+   <restUrl>${GlobalVariable.reqresinURL}/api/users?page=${page}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -28,9 +28,9 @@
    <variables>
       <defaultValue>'1'</defaultValue>
       <description></description>
-      <id>085f0a27-16d1-4afc-b099-3c9847cdda65</id>
+      <id>0facf2cb-055a-40ed-ad03-bd12b160fcb6</id>
       <masked>false</masked>
-      <name>order_id</name>
+      <name>page</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
@@ -44,33 +44,6 @@ import internal.GlobalVariable as GlobalVariable
 
 RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
 
-ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
-
-
-String jsonPass =
-&quot;&quot;&quot;
-{
-  &quot;\$id&quot;: &quot;https://example.com/person.schema.json&quot;,
-  &quot;\$schema&quot;: &quot;https://json-schema.org/draft/2020-12/schema&quot;,
-  &quot;title&quot;: &quot;Person&quot;,
-  &quot;type&quot;: &quot;object&quot;,
-  &quot;properties&quot;: {
-    &quot;firstName&quot;: {
-      &quot;type&quot;: &quot;string&quot;,
-      &quot;description&quot;: &quot;The person's first name.&quot;
-    },
-    &quot;lastName&quot;: {
-      &quot;type&quot;: &quot;string&quot;,
-      &quot;description&quot;: &quot;The person's last name.&quot;
-    },
-    &quot;age&quot;: {
-      &quot;description&quot;: &quot;Age in years which must be equal to or greater than zero.&quot;,
-      &quot;type&quot;: &quot;integer&quot;,
-      &quot;minimum&quot;: 0
-    }
-  }
-}
-&quot;&quot;&quot;
-boolean successful = WS.validateJsonAgainstSchema(response,jsonPass)</verificationScript>
+ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()</verificationScript>
    <wsdlAddress></wsdlAddress>
 </WebServiceRequestEntity>

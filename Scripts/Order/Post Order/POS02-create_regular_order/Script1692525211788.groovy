@@ -18,12 +18,38 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import groovy.json.JsonOutput as JsonOutput
 
-r = WS.sendRequest(findTestObject('Order/GET Order', [('order_id') : '1']))
+CustomKeywords.'fetcher.Order.postOrder'(order_id)
 
-//println(r.getStatusCode())
-//
-//assert r.getStatusCode() == 209
-WS.verifyEqual(r.getStatusCode(), 209)
+String jsonPass =
+"""
+{
+	"\$schema": "https://json-schema.org/draft/2019-09/schema",
+    "\$id": "http://example.com/example.json",
+    "type": "object",
+    "required": [
+        "last_updated_timestamp",
+        "order_status"
+    ],
+    "properties": {
+        "last_updated_timestamp": {
+            "type": "string",
+            "examples": [
+                "1692525822"
+            ]
+        },
+        "order_status": {
+            "type": "string",
+            "examples": [
+                "completed"
+            ]
+        }
+    },
+    "examples": [{
+        "last_updated_timestamp": "1692525822",
+        "order_status": "completed"
+    }]
+}
+"""
 
-WS.sendRequest(findTestObject(null))
+assert WS.validateJsonAgainstSchema(response,jsonPass)
 

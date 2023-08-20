@@ -39,8 +39,14 @@ I have added:
 - Test Data
 - "Orders" Keyword
 
-In all of the folders, I add "Order" Folder. The idea is to make the repository more tidy based on the API URL.
-Inside The Test Case Folder /Order, I divided into methods that the API have. This will divide based on the methods and make it more tidy.
-The Data Files used an excel format (.xls), I have stored it in Test Data folder. It can be used based on sheet on different method of test cases.
-To run, I have divided Test Case, Test Suite, and Test Suite Collection. Test Case can be run individually. Test Suite will be run based on the URL of the API. Test Suite Collection is for the full regression of all APIs.
-The report used the basic Katalon Reports.
+In all of the folders, I add "Order" Folder. The idea is to make the repository more tidy based on the API URL.\
+Inside The Test Case Folder /Order, I divided into methods that the API have. This will divide based on the methods and make it more tidy.\
+The Data Files used an excel format (.xls), I have stored it in Test Data folder. It can be used based on sheet on different method of test cases.\
+To run, I have divided Test Case, Test Suite, and Test Suite Collection. Test Case can be run individually. Test Suite will be run based on the URL of the API. Test Suite Collection is for the full regression of all APIs.\
+The report used the basic Katalon Reports.\
+
+For the validation of each requests I added verify the Status Code and JSON Schema.\
+
+All of the "Orders" cannot be run, since it does not hit to actual API. To try Run the Test Case, Try Run User/Get User/POS01-get_user_by_page I used reqres.in for mocking this test case.
+
+Thank you very much.

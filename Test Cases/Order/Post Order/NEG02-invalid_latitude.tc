@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>NEG02-invalid_latitude</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>1a010962-6716-4512-a2a4-eecd6dde7bfe</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>91f33490-49ae-42c1-87bb-00c23c1df19e</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>91f33490-49ae-42c1-87bb-00c23c1df19e</id>
+      <masked>false</masked>
+      <name>order_id</name>
+   </variable>
+</TestCaseEntity>

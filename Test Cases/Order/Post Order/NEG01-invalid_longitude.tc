@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>NEG01-invalid_longitude</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>83cf6315-04cf-41b4-a43c-17b854e0fd5b</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>a6d72591-0ff5-4d6e-826e-afa170f1457f</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>a6d72591-0ff5-4d6e-826e-afa170f1457f</id>
+      <masked>false</masked>
+      <name>order_id</name>
+   </variable>
+</TestCaseEntity>

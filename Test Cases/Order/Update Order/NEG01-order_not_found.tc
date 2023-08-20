@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>NEG01-order_not_found</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>21d6f1ac-0e98-4bfb-9c53-dd5ec608bd01</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>cdf7beb4-c778-4c09-8b0b-6da778cb9d74</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>cdf7beb4-c778-4c09-8b0b-6da778cb9d74</id>
+      <masked>false</masked>
+      <name>order_id</name>
+   </variable>
+</TestCaseEntity>

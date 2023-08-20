@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>POS01-update_order_by_order_id</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>be414a39-7c05-4e5a-beed-5870315ea806</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>cd3b747f-48a6-42b0-a25d-50ff76e05ac3</id>
+      <masked>false</masked>
+      <name>order_id</name>
+   </variable>
+</TestCaseEntity>

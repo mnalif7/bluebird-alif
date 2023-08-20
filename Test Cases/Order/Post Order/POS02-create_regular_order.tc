@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>POS02-create_regular_order</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>fd0629fd-d12b-4517-abcd-b543b6a7be31</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>5b2fa052-499d-4d5e-8fed-a9c546e46194</id>
+      <masked>false</masked>
+      <name>order_id</name>
+   </variable>
+</TestCaseEntity>

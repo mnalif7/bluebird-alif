@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>POS01-delete_order_by_order_id</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>41565d43-a8c0-4a9b-a158-662b54d24d82</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>3aff6319-1294-4c89-9790-af96e2b46893</id>
+      <masked>false</masked>
+      <name>order_id</name>
+   </variable>
+</TestCaseEntity>
